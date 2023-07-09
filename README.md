@@ -50,7 +50,7 @@ if (max(a.length, (int)p.length()) - a.sumlength > ceiling_cost) {
 
 ### 3.in
 
-$S$ 的長度是 $10^5$，$P$ 的長度是 $3$。
+$S$ 的長度是 $10^5$， $P$ 的長度是 $3$。
 
 應該要找到 $216$ 個答案（吧）。`main.cpp` 能找出 $137$ 個。
 
