@@ -16,6 +16,28 @@
 
 例子可以參考 `2.in`。
 
+## 另一個實作
+
+因應上述提到的問題，我把這個判斷：
+
+```
+if (max(a.length, (int)p.length()) - a.sumlength > ceiling_cost) {
+  break;
+}
+```
+
+改成
+
+```
+if (max(a.length, (int)p.length()) - a.sumlength > ceiling_cost) {
+  continue;
+}
+```
+
+實測起來能找到 `2.in` 的答案，同時也能在 `3.in` 找到更多匹配，效能也沒有顯著的差距。
+
+相關的程式碼可以參考 `double.cpp`。
+
 ## Testdata 解釋
 
 ### 1.in
@@ -30,7 +52,7 @@
 
 $S$ 的長度是 $10^5$，$P$ 的長度是 $3$。
 
-應該要找到超過 $100$ 個答案，否則就是錯的。
+應該要找到 $216$ 個答案（吧）。`main.cpp` 能找出 $137$ 個。
 
 ## 測試
 
