@@ -34,9 +34,9 @@ if (max(a.length, (int)p.length()) - a.sumlength > ceiling_cost) {
 }
 ```
 
-實測起來能找到 `2.in` 的答案，同時也能在 `3.in` 找到更多匹配，效能也沒有顯著的差距。
+實測能找到 `2.in` 的答案，同時也能在 `3.in` 找到更多匹配，效能也沒有顯著的差距。
 
-相關的程式碼可以參考 `double.cpp`。
+修改後的程式碼可以參考 `double.cpp`。
 
 ## Testdata 解釋
 
