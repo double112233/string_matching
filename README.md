@@ -12,7 +12,7 @@
 
 這份 paper 用在 priority 的 heuristic 是有問題的。
 
-因為他只要判到 cost > ceiling_cost 就會停下來，但是他忽略了在 priority 相同的情況下可能會有別組滿足 cost < ceiling_cost，所以有時候會找不到答案。
+因為他只要判到 cost > ceiling_cost 就會停下來，但是事實上在 priority 更低的情況下可能會有別組滿足 cost < ceiling_cost，所以有時候會找不到答案。
 
 例子可以參考 `2.in`。
 
@@ -24,7 +24,7 @@
 
 ### 2.in
 
-可以肉眼追蹤過程的測資。跟前一個的差別是他沒辦法找到能完美匹配的。
+可以肉眼追蹤過程的測資。正確性有問題的例子。
 
 ### 3.in
 
